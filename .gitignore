@@ -1,0 +1,34 @@
+# Jaspr Build Output
+build/
+.dart_tool/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Dependencies
+.packages
+pubspec.lock
+
+# Web
+web/main.dart.js
+web/main.dart.js.map
+web/main.dart.js.deps
+web/main.dart.js.tar.gz
+
+# Misc
+*.swp
+*.swo
+*~
+.flutter-plugins
+.flutter-plugins-dependencies

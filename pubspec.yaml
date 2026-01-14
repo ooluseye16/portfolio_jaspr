@@ -1,0 +1,15 @@
+name: portfolio
+description: A modern portfolio website built with Jaspr
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: ^3.10.0
+
+dependencies:
+  jaspr: ^0.22.1
+
+dev_dependencies:
+  jaspr_builder: ^0.22.1
+  build_runner: ^2.10.5
+  build_web_compilers: ^4.4.7
