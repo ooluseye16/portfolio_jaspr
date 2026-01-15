@@ -69,7 +69,7 @@ class App extends StatelessComponent {
             ]),
             p(classes: 'hero-description animate-slide-up stagger-4', [
               .text(
-                'I build exceptional mobile applications that combine beautiful design with powerful functionality.',
+                'Design-minded mobile developer focused on clean experiences and thoughtful execution',
               ),
             ]),
             div(classes: 'hero-buttons animate-slide-up stagger-5', [
@@ -94,20 +94,20 @@ class App extends StatelessComponent {
           div(classes: 'about-content', [
             div(classes: 'about-text', [
               p(classes: 'about-description', [.text(PersonalInfo.aboutMe)]),
-              div(classes: 'about-stats', [
-                div(classes: 'stat-item', [
-                  h3([.text('${experiences.length}+')]),
-                  p([.text('Years Experience')]),
-                ]),
-                div(classes: 'stat-item', [
-                  h3([.text('${projects.length}+')]),
-                  p([.text('Projects Completed')]),
-                ]),
-                div(classes: 'stat-item', [
-                  h3([.text('${skills.length}+')]),
-                  p([.text('Technologies')]),
-                ]),
-              ]),
+              // div(classes: 'about-stats', [
+              //   div(classes: 'stat-item', [
+              //     h3([.text('${4}+')]),
+              //     p([.text('Years Experience')]),
+              //   ]),
+              //   div(classes: 'stat-item', [
+              //     h3([.text('${10}+')]),
+              //     p([.text('Projects Completed')]),
+              //   ]),
+              //   div(classes: 'stat-item', [
+              //     h3([.text('${skills.length}+')]),
+              //     p([.text('Technologies')]),
+              //   ]),
+              // ]),
             ]),
           ]),
         ]),
@@ -122,6 +122,9 @@ class App extends StatelessComponent {
               'Here are some of the technologies I have worked with in my projects.',
             ),
           ]),
+          // Spacer
+          div(classes: 'section-spacer', []),
+
           div(classes: 'skills-grid', [
             for (final entry in getSkillsByCategory().entries)
               div(classes: 'skill-category', [

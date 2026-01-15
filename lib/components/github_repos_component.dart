@@ -39,7 +39,7 @@ class _GitHubReposComponentState extends State<GitHubReposComponent> {
       }
 
       final url =
-          'https://api.github.com/users/$username/repos?sort=updated&per_page=6';
+          'https://api.github.com/users/$username/repos?sort=updated&per_page=8';
       final response = await web.window.fetch(url.toJS).toDart;
 
       if (!response.ok) {

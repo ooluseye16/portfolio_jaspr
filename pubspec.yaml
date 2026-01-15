@@ -13,3 +13,6 @@ dev_dependencies:
   jaspr_builder: ^0.22.1
   build_runner: ^2.10.5
   build_web_compilers: ^4.4.7
+
+jaspr:
+  mode: static

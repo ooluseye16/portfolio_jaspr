@@ -447,6 +447,17 @@ a {
   background-color: var(--coral);
 }
 
+.section-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--gray);
+  margin-bottom: var(--space-lg);
+}
+
+.section-spacer {
+  height: var(--space-xl);
+}
+
 .about-content {
   max-width: 1000px;
   margin: 0 auto;
@@ -955,7 +966,11 @@ a {
   font-size: 1.1rem;
   color: var(--dark);
   font-weight: 600;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
+
 
 .social-links {
   display: flex;

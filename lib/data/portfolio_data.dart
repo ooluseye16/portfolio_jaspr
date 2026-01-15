@@ -19,7 +19,7 @@ class PersonalInfo {
   static const String twitterUrl = 'https://twitter.com/oluseye_obitola';
 
   static const String cvUrl =
-      'assets/Oluseye_Obisesan_Obitola_CV.pdf'; // TODO: Add your CV file
+      'assets/Oluseye_Obisesan_Resume.pdf'; 
 
   static const String aboutMe = '''
 I am a passionate mobile developer with a knack for creating user-friendly, efficient, and innovative applications. Currently, I'm focused on refining my skills and building apps that showcase creativity and functionality. Whether it's crafting dynamic interfaces or implementing clean, maintainable code, I'm dedicated to delivering excellence in every project. Let's collaborate and bring impactful ideas to life!
@@ -72,14 +72,12 @@ final List<Experience> experiences = [
   ),
   const Experience(
     company: 'Fiilar',
-    role: 'Flutter Developer', 
+    role: 'Flutter Developer',
     period: 'March 2024 - Jan 2026',
     description:
         'Discover perfect spaces - from workspaces and hotels to state-of-the-art studios and unique event venues. We make finding your ideal space easy and convenient',
     link: 'https://fiilar.com/',
   ),
-
-  
 
   // Add more experiences as needed
 ];
@@ -152,28 +150,28 @@ final List<Project> projects = [
 final List<BlogPost> blogPosts = [
   // TODO: Add your blog posts here
   const BlogPost(
-    title: 'Getting Started with Flutter: A Beginner\'s Guide',
+    title: 'Where do I go from here?',
     excerpt:
-        'Learn the basics of Flutter development and build your first mobile app.',
-    url: 'https://medium.com/@yourusername/your-blog-post-url',
-    date: '2024-01-15',
+        'A Roadmap to navigate your learning journey as a Flutter Developer.',
+    url: 'https://tirioh.hashnode.dev/where-do-i-go-from-here',
+    date: '2022-07-22',
   ),
 
   const BlogPost(
-    title: 'Building Scalable Apps with Clean Architecture',
-    excerpt:
-        'Explore how to structure your Flutter apps using clean architecture principles.',
-    url: 'https://dev.to/yourusername/your-blog-post-url',
-    date: '2024-02-20',
+    title: 'Using PageView to display multiple StoryView',
+    excerpt: 'An approach to showing multiple StoryView using Flutter',
+    url:
+        'https://tirioh.hashnode.dev/using-pageview-to-display-multiple-storyview',
+    date: '2023-11-07',
   ),
 
-  const BlogPost(
-    title: 'State Management in Flutter: A Comprehensive Guide',
-    excerpt:
-        'Compare different state management solutions and find the best fit for your project.',
-    url: 'https://hashnode.com/@yourusername/your-blog-post-url',
-    date: '2024-03-10',
-  ),
+  // const BlogPost(
+  //   title: 'State Management in Flutter: A Comprehensive Guide',
+  //   excerpt:
+  //       'Compare different state management solutions and find the best fit for your project.',
+  //   url: 'https://hashnode.com/@yourusername/your-blog-post-url',
+  //   date: '2024-03-10',
+  // ),
 
   // Add more blog posts as needed
 ];
