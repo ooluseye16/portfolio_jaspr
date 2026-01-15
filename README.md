@@ -1,18 +1,23 @@
 # Portfolio - Jaspr
 
-A modern, responsive portfolio website built with [Jaspr](https://github.com/schultek/jaspr) - a Dart framework for building web applications.
+A modern, artistic portfolio website built with [Jaspr](https://github.com/schultek/jaspr) - a Dart framework for building web applications.
+
+## 🌐 Live Demo
+
+**[View Live Portfolio →](https://tirioh.wtf/)**
 
 ## Features
 
-- 🎨 Modern flat design with smooth animations
-- 📱 Fully responsive (mobile, tablet, desktop)
-- ⚡ Fast loading and optimized performance
-- 🔗 GitHub API integration for automatic repository display
-- 📝 Blog section with external links
-- 🎯 Interactive project showcase with featured highlighting
-- 📊 Skills categorization and visualization
-- 📅 Experience timeline
-- 🌐 SEO optimized
+- 🎨 **Artistic Mondrian-style design** with geometric shapes and solid colors
+- ✨ **Interactive effects** - Custom cursor, particle bursts, scroll animations
+- 📱 **Fully responsive** - Mobile, tablet, and desktop optimized
+- ⚡ **Pure Dart GitHub integration** - Automatic repository display using `dart:js_interop`
+- 🎯 **Dynamic project showcase** with featured highlighting
+- 📊 **Skills visualization** with category-based Mondrian grid
+- 📅 **Experience timeline** with interactive markers
+- 📝 **Blog integration** with external links
+- 🌐 **SEO optimized** with Open Graph and Twitter Card meta tags
+- 🖼️ **Custom favicon and social preview image**
 
 ## Getting Started
 
@@ -50,10 +55,12 @@ The site will be available at `http://localhost:8080`
 Build the production version:
 
 ```bash
-webdev build
+webdev build --output web:build/web
 ```
 
-The built files will be in the `build` directory.
+The built files will be in the `build/web` directory.
+
+For deployment instructions, see [`DEPLOYMENT.md`](DEPLOYMENT.md).
 
 ## Project Structure
 
@@ -101,9 +108,12 @@ Each section is a separate component in `lib/components/`. You can modify indivi
 
 ## Deployment
 
-This portfolio can be deployed to:
+This portfolio is deployed on **Firebase Hosting**: [oluseyeobitola.web.app](https://oluseyeobitola.web.app/)
 
-- Firebase Hosting
+For detailed deployment instructions, see [`DEPLOYMENT.md`](DEPLOYMENT.md).
+
+Compatible with:
+- ✅ Firebase Hosting (recommended)
 - GitHub Pages
 - Netlify
 - Vercel
@@ -116,8 +126,10 @@ MIT License - feel free to use this template for your own portfolio!
 ## Built With
 
 - [Jaspr](https://github.com/schultek/jaspr) - Dart web framework
-- [GitHub API](https://docs.github.com/en/rest) - For repository integration
-- Google Fonts (Inter)
+- [dart:js_interop](https://dart.dev/interop/js-interop) - For GitHub API integration
+- [GitHub REST API](https://docs.github.com/en/rest) - Repository data
+- [Google Fonts](https://fonts.google.com/) - Space Grotesk & Inter typography
+- [Firebase Hosting](https://firebase.google.com/products/hosting) - Deployment platform
 
 ---
 
