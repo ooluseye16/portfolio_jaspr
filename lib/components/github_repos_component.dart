@@ -1,9 +1,10 @@
 import 'dart:convert';
-import 'dart:js_interop';
+import 'package:universal_web/js_interop.dart';
+
 
 import 'package:jaspr/dom.dart';
 import 'package:jaspr/jaspr.dart';
-import 'package:web/web.dart' as web;
+import 'package:universal_web/web.dart' as web;
 
 import '../data/portfolio_data.dart';
 import '../models/github_repo.dart';

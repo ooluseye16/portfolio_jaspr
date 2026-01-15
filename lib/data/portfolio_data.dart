@@ -88,7 +88,7 @@ final List<Project> projects = [
   const Project(
     title: 'Fiamora',
     description:
-        'A modern Flutter application that connects people across **8 different connection modes** - from dating and friendship to professional networking and gaming partnerships.',
+        'A modern Flutter application that connects people across 8 different connection modes - from dating and friendship to professional networking and gaming partnerships. Currently in Google Play Store Closed Testing',
     technologies: ['Flutter', 'Dart', 'Supabase'],
     // githubUrl: 'https://github.com/username/repo', // TODO: Add if available
     liveUrl: 'https://play.google.com/store/apps/details?id=dev.tirioh.fiamora',
@@ -116,7 +116,8 @@ final List<Project> projects = [
     technologies: ['Flutter', 'Dart', 'Firebase'],
     githubUrl: 'https://github.com/ooluseye16/free-rant',
     liveUrl:
-        'https://play.google.com/store/apps/details?id=dev.tirioh.free-rant',
+        'https://play.google.com/store/apps/details?id=com.triadico.freedom_rant',
+        isFeatured: true,
   ),
   const Project(
     title: 'Invoice Generator',
