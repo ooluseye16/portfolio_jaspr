@@ -9,7 +9,6 @@ class PersonalInfo {
   static const String name = 'Oluseye Obitola';
   static const String title = 'Flutter & Dart Developer';
   static const String email = 'oluseyeobitola1@gmail.com';
-  static const String phone = '+234 904 179 0535';
   static const String location = 'Ibadan, Nigeria';
 
   // TODO: Add your social media links
@@ -22,8 +21,8 @@ class PersonalInfo {
       'assets/Oluseye_Obisesan_Resume.pdf'; 
 
   static const String aboutMe = '''
-I am a passionate mobile developer with a knack for creating user-friendly, efficient, and innovative applications. Currently, I'm focused on refining my skills and building apps that showcase creativity and functionality. Whether it's crafting dynamic interfaces or implementing clean, maintainable code, I'm dedicated to delivering excellence in every project. Let's collaborate and bring impactful ideas to life!
-'''; // TODO: Update your about section
+I build mobile products end-to-end with Flutter and Dart — from fintech wallets and KYC flows to real-time gaming platforms. At nuMoni I work on a digital rewards wallet people use for everyday top-ups; before that I built booking experiences at Fiilar. Outside client work, I ship things I'm curious about: two published Flutter packages, a bonding-curve fantasy trading game, and a notes-style expense tracker I use myself daily. I care most about interfaces that feel fast and forgiving, and code that's still legible six months later.
+''';
 }
 
 // ===== SKILLS =====
@@ -86,6 +85,24 @@ final List<Experience> experiences = [
 // Add or modify your projects here
 final List<Project> projects = [
   const Project(
+    title: 'Wonr',
+    description:
+        'A live competitive gaming platform for Nigeria — players join real-money prize pools and compete in trivia, math sprint, and undercover game modes, with KYC-verified payouts direct to bank accounts in 60 seconds.',
+    technologies: ['Flutter', 'Riverpod', 'Supabase', 'Paystack'],
+    githubUrl: 'https://github.com/ooluseye16/winflow',
+    liveUrl: 'https://wonr.app',
+    isFeatured: true,
+  ),
+  const Project(
+    title: 'Voxstreet',
+    description:
+        "Nigeria's independent review platform — \"what the street is saying.\" Lets users write and browse honest reviews of local businesses and services.",
+    technologies: ['Flutter', 'Firebase', 'Supabase'],
+    githubUrl: 'https://github.com/ooluseye16/voxstreet',
+    liveUrl: 'https://thevoxstreet.com',
+    isFeatured: true,
+  ),
+  const Project(
     title: 'Fiamora',
     description:
         'A modern Flutter application that connects people across 8 different connection modes - from dating and friendship to professional networking and gaming partnerships. Currently in Google Play Store Closed Testing',
@@ -93,6 +110,7 @@ final List<Project> projects = [
     // githubUrl: 'https://github.com/username/repo', // TODO: Add if available
     liveUrl: 'https://play.google.com/store/apps/details?id=dev.tirioh.fiamora',
     isFeatured: true, // This will highlight it prominently
+    interactiveDemoUrl: '/fiamora/',
   ),
   const Project(
     title: 'Dayri',
@@ -119,28 +137,69 @@ final List<Project> projects = [
         'https://play.google.com/store/apps/details?id=com.triadico.freedom_rant',
         isFeatured: true,
   ),
+  // Games
   const Project(
-    title: 'Invoice Generator',
+    title: 'Territory Conquest',
     description:
-        'A flutter app that generates invoices for any organization created. Organizations are stored locally using Hive. Invoice generated in PDF format',
-    technologies: ['Flutter', 'Dart', 'Hive', 'PDF'],
-    githubUrl: 'https://github.com/ooluseye16/invoice-generator',
+        'A real-time multiplayer strategy game — Risk crossed with a base-builder. Claim territory, run a five-resource economy, march armies across a procedurally generated 3D map under fog of war, and propose or betray alliances. Play solo against bots with distinct personalities or against friends via a room code.',
+    technologies: ['Flutter', 'flutter_scene', 'Serverpod', 'Postgres'],
+    liveUrl: 'https://play.territoryconquest.xyz',
+    category: 'game',
+  ),
+  const Project(
+    title: 'Labyrinth',
+    description:
+        'A 3D procedurally generated maze game with Rapier physics — casual play, a daily challenge with a global leaderboard and ghost racing against your best run, and a hand-authored Challenge mode with timed levels and a dimming-torch hazard.',
+    technologies: ['Flutter', 'flutter_scene', 'Firebase'],
+    category: 'game',
+  ),
+  const Project(
+    title: 'RMC Lab',
+    description:
+        'Runes Magic Circle — a magic-circle sandbox where you build circles from components and a deterministic engine works out what happens. Learn the basics in the Academy, then document your discoveries in your own journal. Includes a verified leaderboard, sharing, and AI-written discovery cards.',
+    technologies: ['JavaScript', 'Node.js', 'Postgres', 'Gemini'],
+    liveUrl: 'https://rmclab.tirioh.wtf',
+    category: 'game',
   ),
 
+  // Packages
   const Project(
-    title: 'Point Tracker',
+    title: 'Flutter Tour Guide',
     description:
-        'A leaderboard mobile app where users can track their points. Uses Sqflite to store the data locally.',
-    technologies: ['Flutter', 'Dart', 'Sqflite'],
-    githubUrl: 'https://github.com/ooluseye16/point-tracker',
+        'A lightweight, themeable Flutter onboarding tour package with spotlight cutouts, animated tooltips, auto-scroll, and tab/page navigation support. Published on pub.dev.',
+    technologies: ['Flutter', 'Dart'],
+    githubUrl: 'https://github.com/ooluseye16/flutter_spotlight_tour',
+    liveUrl: 'https://pub.dev/packages/flutter_tour_guide',
+    category: 'package',
+  ),
+  const Project(
+    title: 'Dev Log Viewer',
+    description:
+        'A real-time local log viewer for Flutter/Dart development — streams structured logs from a running app to a searchable, filterable web UI on localhost. Ships as two published packages: a CLI server and a Flutter/Dart client.',
+    technologies: ['Dart', 'Flutter', 'CLI'],
+    githubUrl: 'https://github.com/ooluseye16/dev_log_viewer',
+    liveUrl: 'https://pub.dev/packages/dev_log_viewer',
+    category: 'package',
   ),
 
+  // Side Projects
   const Project(
-    title: 'Blog API',
+    title: 'Own A Country',
     description:
-        'A REST API built with Node.js and Express.js that allows users to create, read, update, and delete blog posts. It uses MongoDB as the database.',
-    technologies: ['Node.js', 'Express.js', 'MongoDB', 'REST API'],
-    githubUrl: 'https://github.com/ooluseye16/blog-api',
+        'A World Cup fantasy trading game — buy shares in national teams and watch prices move on a bonding-curve pricing engine as tournament results come in. Includes group play, portfolio tracking, and sell-window mechanics tied to knockout rounds.',
+    technologies: ['React', 'Vite', 'Supabase', 'Zustand'],
+    githubUrl: 'https://github.com/ooluseye16/own_a_country',
+    liveUrl: 'https://own-a-country.vercel.app/',
+    category: 'side',
+  ),
+  const Project(
+    title: 'Ledger',
+    description:
+        'A notes-style salary & expense tracker. Fully offline, local-only PWA — type a line like you would in a notes app ("fuel 15k", "netflix 4400 monthly") and it\'s parsed into an expense, income, or recurring bill. All data stays in IndexedDB on-device.',
+    technologies: ['TypeScript', 'React', 'Vite', 'PWA'],
+    githubUrl: 'https://github.com/ooluseye16/ledger',
+    liveUrl: 'https://ledger-ten-liard.vercel.app/',
+    category: 'side',
   ),
 
   // TODO: Add more projects as needed
@@ -196,6 +255,30 @@ Map<String, List<Skill>> getSkillsByCategory() {
 // Get featured projects
 List<Project> getFeaturedProjects() {
   return projects.where((project) => project.isFeatured).toList();
+}
+
+// Get games
+List<Project> getGameProjects() {
+  return projects.where((project) => project.category == 'game').toList();
+}
+
+// Get published packages
+List<Project> getPackageProjects() {
+  return projects.where((project) => project.category == 'package').toList();
+}
+
+// Get side projects
+List<Project> getSideProjects() {
+  return projects.where((project) => project.category == 'side').toList();
+}
+
+// Get everything else (not featured, not a package, not a side project)
+List<Project> getOtherProjects() {
+  return projects
+      .where(
+        (project) => !project.isFeatured && project.category == null,
+      )
+      .toList();
 }
 
 // Get recent blog posts (limit to n posts)

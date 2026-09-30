@@ -188,12 +188,38 @@ class App extends StatelessComponent {
             ]),
           ],
 
-          // Regular Projects
-          if (projects.where((p) => !p.isFeatured).isNotEmpty) ...[
-            if (getFeaturedProjects().isNotEmpty)
-              h3(classes: 'projects-subtitle', [.text('Other Projects')]),
+          // Games
+          if (getGameProjects().isNotEmpty) ...[
+            h3(classes: 'projects-subtitle', [.text('Games')]),
             div(classes: 'projects-grid', [
-              for (final project in projects.where((p) => !p.isFeatured))
+              for (final project in getGameProjects())
+                _buildProjectCard(project),
+            ]),
+          ],
+
+          // Packages
+          if (getPackageProjects().isNotEmpty) ...[
+            h3(classes: 'projects-subtitle', [.text('Packages')]),
+            div(classes: 'projects-grid', [
+              for (final project in getPackageProjects())
+                _buildProjectCard(project),
+            ]),
+          ],
+
+          // Side Projects
+          if (getSideProjects().isNotEmpty) ...[
+            h3(classes: 'projects-subtitle', [.text('Side Projects')]),
+            div(classes: 'projects-grid', [
+              for (final project in getSideProjects())
+                _buildProjectCard(project),
+            ]),
+          ],
+
+          // Other Projects
+          if (getOtherProjects().isNotEmpty) ...[
+            h3(classes: 'projects-subtitle', [.text('Other Projects')]),
+            div(classes: 'projects-grid', [
+              for (final project in getOtherProjects())
                 _buildProjectCard(project),
             ]),
           ],
@@ -342,7 +368,7 @@ class App extends StatelessComponent {
           span(classes: 'tech-tag', [.text(tech)]),
       ]),
       div(classes: 'project-links', [
-        if (project.githubUrl != null)
+        if (!isFeatured && project.githubUrl != null)
           a(
             href: project.githubUrl!,
             target: Target.blank,
@@ -355,6 +381,13 @@ class App extends StatelessComponent {
             target: Target.blank,
             classes: 'project-link',
             [.text('Live Demo →')],
+          ),
+        if (project.interactiveDemoUrl != null)
+          a(
+            href: project.interactiveDemoUrl!,
+            target: Target.blank,
+            classes: 'project-link',
+            [.text('Interactive Demo →')],
           ),
       ]),
     ]);
